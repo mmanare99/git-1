@@ -21,8 +21,8 @@ body {
         "Segoe UI",
         sans-serif;
 
-    background: #0b0d10;
-    color: #f5f5f5;
+    background: linear-gradient(136deg, white, yellow, orange);
+    color: black;
     line-height: 1.6;
 }
 
