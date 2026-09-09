@@ -3,10 +3,822 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Portfolio</title>
+
+    <title>Git Portfolio Selelo Serumula</title>
+
+    <meta
+        name="description"
+        content="A Git and GitHub portfolio showcasing version control skills, workflows, commands and projects."
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello Git Portfolio</h1>
-    <h2>Welcome to Git Portfolio</h2>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">⌘</span>
+                Git<span>Portfolio</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        VERSION CONTROL • GIT • GITHUB
+                    </p>
+
+                    <h1>
+                        Building with
+                        <span>Git</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A simple portfolio documenting my understanding of
+                        Git, GitHub, version control, branching, commits,
+                        collaboration and real-world software projects.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects
+                        </a>
+
+                        <a href="#skills" class="btn btn-secondary">
+                            Explore Git Skills
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="image-card">
+
+                        <img
+                            src="assets/git-logo.png"
+                            alt="Git logo"
+                        >
+
+                        <div class="image-card-label">
+                            <span class="status-dot"></span>
+                            Version Control
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">01 — ABOUT</p>
+
+                    <h2>
+                        Understanding <span>Git</span>
+                    </h2>
+
+                    <p>
+                        Git is a distributed version control system used to
+                        track changes in source code and collaborate with
+                        other developers.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-image">
+
+                        <img
+                            src="assets/git-terminall.png"
+                            alt="Git commands in a terminal"
+                        >
+
+                    </div>
+
+
+                    <div class="about-content">
+
+                        <h3>
+                            Why Git matters
+                        </h3>
+
+                        <p>
+                            Git allows developers to safely manage the history
+                            of a software project. Instead of manually keeping
+                            copies of different versions of a project, Git
+                            records changes through commits.
+                        </p>
+
+                        <p>
+                            Git also makes it possible to work on different
+                            features using branches and combine those changes
+                            through merging or rebasing.
+                        </p>
+
+
+                        <div class="about-points">
+
+                            <div class="about-point">
+                                <strong>01</strong>
+                                <span>Track code changes</span>
+                            </div>
+
+                            <div class="about-point">
+                                <strong>02</strong>
+                                <span>Create development branches</span>
+                            </div>
+
+                            <div class="about-point">
+                                <strong>03</strong>
+                                <span>Collaborate with developers</span>
+                            </div>
+
+                            <div class="about-point">
+                                <strong>04</strong>
+                                <span>Maintain project history</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section section-dark" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">02 — GIT SKILLS</p>
+
+                    <h2>
+                        Git concepts I <span>understand</span>
+                    </h2>
+
+                    <p>
+                        Core concepts used in everyday software development
+                        with Git.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">01</div>
+
+                        <h3>Repository</h3>
+
+                        <p>
+                            A repository contains the project's files,
+                            commits, branches and Git history.
+                        </p>
+
+                        <code>git init</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">02</div>
+
+                        <h3>Working Tree</h3>
+
+                        <p>
+                            The working tree contains the files currently
+                            being edited in the project.
+                        </p>
+
+                        <code>git status</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">03</div>
+
+                        <h3>Staging Area</h3>
+
+                        <p>
+                            Changes are placed into the staging area before
+                            creating a commit.
+                        </p>
+
+                        <code>git add .</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">04</div>
+
+                        <h3>Commit</h3>
+
+                        <p>
+                            A commit records a snapshot of changes in the
+                            project's history.
+                        </p>
+
+                        <code>git commit -m "message"</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">05</div>
+
+                        <h3>Branch</h3>
+
+                        <p>
+                            Branches allow developers to work on features
+                            independently.
+                        </p>
+
+                        <code>git branch feature</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">06</div>
+
+                        <h3>Merge</h3>
+
+                        <p>
+                            Merge combines changes from one branch into
+                            another branch.
+                        </p>
+
+                        <code>git merge feature</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">07</div>
+
+                        <h3>Rebase</h3>
+
+                        <p>
+                            Rebase moves or reapplies commits onto another
+                            base commit.
+                        </p>
+
+                        <code>git rebase main</code>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-number">08</div>
+
+                        <h3>Remote</h3>
+
+                        <p>
+                            Remote repositories allow projects to be shared
+                            through platforms such as GitHub.
+                        </p>
+
+                        <code>git push</code>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WORKFLOW ================= -->
+
+        <section class="section" id="workflow">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">03 — WORKFLOW</p>
+
+                    <h2>
+                        My Git <span>workflow</span>
+                    </h2>
+
+                    <p>
+                        A basic development cycle from writing code to
+                        publishing changes.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-image">
+
+                    <img
+                        src="assets/git-workflow.png"
+                        alt="Git development workflow"
+                    >
+
+                </div>
+
+
+                <div class="workflow">
+
+                    <div class="workflow-step">
+
+                        <div class="step-icon">01</div>
+
+                        <h3>Working Tree</h3>
+
+                        <p>
+                            Create or modify project files.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-arrow">→</div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="step-icon">02</div>
+
+                        <h3>Staging</h3>
+
+                        <p>
+                            Select changes using Git add.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-arrow">→</div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="step-icon">03</div>
+
+                        <h3>Commit</h3>
+
+                        <p>
+                            Save the changes to Git history.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-arrow">→</div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="step-icon">04</div>
+
+                        <h3>Remote</h3>
+
+                        <p>
+                            Push the changes to GitHub.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMMANDS ================= -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">04 — COMMANDS</p>
+
+                    <h2>
+                        Commands I <span>use</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>git-bash</span>
+
+                    </div>
+
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <span class="prompt">$</span>
+                            git status
+                        </p>
+
+                        <p>
+                            <span class="prompt">$</span>
+                            git add .
+                        </p>
+
+                        <p>
+                            <span class="prompt">$</span>
+                            git commit -m "Update portfolio"
+                        </p>
+
+                        <p>
+                            <span class="prompt">$</span>
+                            git branch feature
+                        </p>
+
+                        <p>
+                            <span class="prompt">$</span>
+                            git checkout feature
+                        </p>
+
+                        <p>
+                            <span class="prompt">$</span>
+                            git push origin feature
+                        </p>
+
+                        <p class="terminal-output">
+                            Everything up-to-date
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">05 — PROJECTS</p>
+
+                    <h2>
+                        Projects managed with <span>Git</span>
+                    </h2>
+
+                    <p>
+                        Examples of software projects where version control
+                        can be applied throughout development.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="assets/github-logo.png"
+                                alt="GitHub project"
+                            >
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-tag">
+                                WEB APPLICATION
+                            </div>
+
+                            <h3>TimedQuiz</h3>
+
+                            <p>
+                                A timed online quiz application with
+                                questions, chapters, scoring, results and
+                                review functionality.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Git</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="assets/git-branching.png"
+                                alt="Git branching"
+                            >
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-tag">
+                                SOFTWARE PROJECT
+                            </div>
+
+                            <h3>Student Systems</h3>
+
+                            <p>
+                                Student-focused software projects developed
+                                using structured version control and Git
+                                workflows.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>Git</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="assets/git-terminall.png"
+                                alt="Git terminal"
+                            >
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-tag">
+                                LEARNING PROJECT
+                            </div>
+
+                            <h3>Git Practice</h3>
+
+                            <p>
+                                A practical Git learning project covering
+                                commits, branches, merges, conflicts,
+                                remotes and GitHub.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Git</span>
+                                <span>Git Bash</span>
+                                <span>GitHub</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GITHUB ================= -->
+
+        <section class="github-section">
+
+            <div class="container github-content">
+
+                <div>
+
+                    <p class="section-label">
+                        GITHUB
+                    </p>
+
+                    <h2>
+                        My code lives on <span>GitHub.</span>
+                    </h2>
+
+                    <p>
+                        Explore my repositories, commits and software
+                        development projects.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://github.com/selello99"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    Visit GitHub →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section" id="contact">
+
+            <div class="container contact-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">06 — CONTACT</p>
+
+                    <h2>
+                        Let's build and <span>learn.</span>
+                    </h2>
+
+                    <p>
+                        Interested in software development, Git, GitHub and
+                        building practical systems.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a
+                        href="https://github.com/selello99"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>GitHub</span>
+                        <strong>→</strong>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/selello99"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>LinkedIn</span>
+                        <strong>→</strong>
+                    </a>
+
+                    <a href="mailto:your-email@example.com">
+                        <span>Email</span>
+                        <strong>→</strong>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#home" class="logo">
+                    <span class="logo-symbol">⌘</span>
+                    Git<span>Portfolio</span>
+                </a>
+
+                <p>
+                    Built with HTML, CSS, JavaScript and Git.
+                </p>
+
+            </div>
+
+
+            <p class="copyright">
+                © <span id="year"></span> Selelo Serumula. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
